@@ -1,11 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./Widgets";
 
-function App() {
+const App=()=>{
   return (
-    <div className="App">
+    <React.Fragment>
+      <Router>
       <Navbar/>
-    </div>
+        <Routes>
+          <Route exact path="/">
+              
+          </Route>
+        </Routes>
+      </Router>
+    </React.Fragment>
   );
 }
 
