@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <nav className="navbar navbar-expand-lg ">
-                <div className="container-fluid d-flex flex-column justify-content-evenly">
+                <div className="container-fluid d-flex flex-column">
                     <div className="d-flex justify-content-between ">
                         <NavLink to="/" id="monstercat-link"><img src={Logo} alt="" className="navbar-brand" id="monstercat-logo" /></NavLink>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,9 +69,9 @@ const Navbar = () => {
                     </div>
 
                     {/* Second nav bar */}
-                    <nav className="navbar navbar-expand-lg">
-                        <div className="container-fluid">
-                            <div className="collapse navbar-collapse" id="navbarNav">
+                    <nav className="navbar navbar-expand-lg "  id="navbar-lower">
+                        <div className="container-fluid d-flex" >
+                            <div className="collapse navbar-collapse " id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
                                         <NavLink to="/" className="nav-link">
@@ -90,8 +90,10 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </div>
+
+                            <div>music player widget goes here</div>
                         </div>
-                        <div>music player widget goes here</div>
+                        
                     </nav>
                 </div>
             </nav>

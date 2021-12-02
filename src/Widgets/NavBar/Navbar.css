@@ -8,3 +8,14 @@
     padding: 0px;
     margin: 0px;
 }
+#navbarNav{
+    flex-grow: 0;
+}
+
+#navbar-lower{
+    justify-content: space-between;
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+
+}
